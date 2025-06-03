@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <section id="menu-toggle">
+        <a href="#" class=" menu-toggle__brand" ><i class='bx bxs-smile menu-toggle__icon'></i> TECNODATA </a>
+
+        <ul class="menu-toggle__size_menu">
+            <!--Menu de Operaciones-->
+
+            <li class="menu-toggle__divisor" data-text ="OPERACIONES"></li>
+
+            <li><a href="#" class="Activate"><i class='bx bx-dots-horizontal-rounded menu-toggle__icon'></i>Facturar</a></li>
+            <li><a href="#" class="menu-toggle__link"><i class='bx bxs-wallet menu-toggle__icon'></i>Compras</a></li>
+            <li><a href="#" class="menu-toggle__link"><i class='bx bxs-inbox menu-toggle__icon'></i>Inventario</a></li>
+            <!--Menu desplegable de Inventario-->
+            <ul class="menu-toggle__submenu -drowdown">
+                <li><a href="#" class="menu-toggle__link">Materia Prima</a></li>
+                <li><a href="#" class="menu-toggle__link">Productos Fabricados</a></li>
+                <li><a href="#" class="menu-toggle__link">Eliminar Producto</a></li>
+
+            </ul>
+
+            <!--Menu de Catalogos-->
+            <li class="menu-toggle__divisor" data-text ="CATALOGOS"></li>
+            <li><a href="#" class="menu-toggle__link"><i class='bx bxs-inbox menu-toggle__icon'></i>Tablas Catalogos</a></li>
+            <!--Menu desplegable de Catalogo-->
+            <ul class="menu-toggle__submenu -drowdown">
+                <li><a href="#" class="menu-toggle__link">Categoria</a></li>
+                <li><a href="#" class="menu-toggle__link">Proveedores</a></li>
+                <li><a href="#" class="menu-toggle__link">Fabricas</a></li>
+                <li><a href="#" class="menu-toggle__link">Sucursales</a></li>
+                <li><a href="#" class="menu-toggle__link">Clientes</a></li>
+            </ul>
+
+            <!--Menu de Reportes-->
+            <li><a href="#" class="menu-toggle__link"><i class='bx bxs-chart menu-toggle__icon'></i>Reportes</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Menu Navegacion y el contenido princpal ajeno al menu lateral -->
+    <section id="content">
+        <!-- Menu de Navegacion -->
+        <nav>
+            <!-- Buscador -->
+            <form action="#" class="nav__form">
+               <div class="nav__form-group">
+                    <input id="searchInput" type="text" placeholder="Buscar..." class="nav__form-group__input"> 
+                    <i class='bx bx-search nav__form-group__icon' id="clearSearch"></i>
+                </div>
+            </form>
+
+            <!-- Notificaciones -->
+            <a href="#" class="nav__link">
+                <i class='bx bx-bell nav__form-group__icon'>
+                    <span class="nav__link__badge">3</span>
+                </i>      
+            </a>
+
+            <!-- Mensajes -->
+            <a href="#" class="nav__link">
+                <i class='bx bx-message nav__form-group__icon'>
+                    <span class="nav__link__badge">5</span>
+                </i>      
+            </a>
+
+            <!-- Perfil de Usuario -->
+            <span class="nav__divisor"></span>
+            <div class="nav__profile">
+                <img src="#" alt="Avatar" class="nav__profile-img">
+                <span class="nav__profile__name">Usuario</span>
+                <i class='bx bx-chevron-down nav__profile__icon'></i>
+
+                <!-- Menu desplegable de Perfil -->
+                <ul class="nav__profile__submenu">
+                    <li><a href="#" class="nav__profile-link"><i class='bx bxs-user nav__profile-link__icon'></i> Perfil</a></li>
+                    <li><a href="#" class="nav__profile-link"><i class='bx bxs-cog nav__profile-link__icon'></i> Configuracion</a></li>
+                    <li><a href="#" class="nav__profile-link"><i class='bx bxs-log-out nav__profile-link__icon'></i> Cerrar Sesion</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main>
+            <h1>Bienvenido a Tecnodata</h1>
+            <p>Esta es una aplicacion de gestion de inventario y ventas.</p>    
+        </main>
+
+    </section>
+    
+</body>
+</html>
